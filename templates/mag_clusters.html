@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 2</title>
+</head>
+<body>
+<div style="text-align: center">
+    <h1>Srinija Katakam</h1>
+    <h3>1001861512</h3>
+</div>
+<div>
+    <table >
+        <tr >
+            <th >Time</th>
+            <th >Latitude</th>
+            <th >Longitude</th>
+            <th >Depth</th>
+            <th >Mag</th>
+            <th >Magtype</th>
+            <th >Place</th>
+            <th >LocationSource</th>
+        </tr>
+        {% for values in earthquakes1 %}
+        <tr >
+            {% for data in values %}
+            <td >{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Count of earthquakes with MAG between -2.0 and -1.0 is:</h3>
+    <h5>{{length1}}</h5>
+</div>
+<div>
+    <table >
+        <tr >
+            <th >Time</th>
+            <th >Latitude</th>
+            <th >Longitude</th>
+            <th >Depth</th>
+            <th >Mag</th>
+            <th >Magtype</th>
+            <th >Place</th>
+            <th >LocationSource</th>
+        </tr>
+        {% for values in earthquakes2 %}
+        <tr >
+            {% for data in values %}
+            <td >{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Count of earthquakes with MAG between -1.0 and 0.0 is:</h3>
+    <h5>{{length2}}</h5>
+</div>
+<div>
+    <table >
+        <tr >
+            <th >Time</th>
+            <th >Latitude</th>
+            <th >Longitude</th>
+            <th >Depth</th>
+            <th >Mag</th>
+            <th >Magtype</th>
+            <th >Place</th>
+            <th >LocationSource</th>
+        </tr>
+        {% for values in earthquakes3 %}
+        <tr >
+            {% for data in values %}
+            <td >{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Count of earthquakes with MAG between 0.0 and 1.0 is:</h3>
+    <h5>{{length3}}</h5>
+</div>
+<div>
+    <table >
+        <tr >
+            <th >Time</th>
+            <th >Latitude</th>
+            <th >Longitude</th>
+            <th >Depth</th>
+            <th >Mag</th>
+            <th >Magtype</th>
+            <th >Place</th>
+            <th >LocationSource</th>
+        </tr>
+        {% for values in earthquakes4 %}
+        <tr >
+            {% for data in values %}
+            <td >{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Count of earthquakes with MAG between 1.0 and 2.0 is:</h3>
+    <h5>{{length4}}</h5>
+</div>
+<div>
+    <table >
+        <tr >
+            <th >Time</th>
+            <th >Latitude</th>
+            <th >Longitude</th>
+            <th >Depth</th>
+            <th >Mag</th>
+            <th >Magtype</th>
+            <th >Place</th>
+            <th >LocationSource</th>
+        </tr>
+        {% for values in earthquakes5 %}
+        <tr >
+            {% for data in values %}
+            <td >{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Count of earthquakes with MAG between 2.0 and 3.0 is:</h3>
+    <h5>{{length5}}</h5>
+</div>
+<div>
+    <table >
+        <tr >
+            <th >Time</th>
+            <th >Latitude</th>
+            <th >Longitude</th>
+            <th >Depth</th>
+            <th >Mag</th>
+            <th >Magtype</th>
+            <th >Place</th>
+            <th >LocationSource</th>
+        </tr>
+        {% for values in earthquakes6 %}
+        <tr >
+            {% for data in values %}
+            <td >{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Count of earthquakes with MAG between 3.0 and 4.0 is:</h3>
+    <h5>{{length6}}</h5>
+</div>
+<div>
+    <table >
+        <tr >
+            <th >Time</th>
+            <th >Latitude</th>
+            <th >Longitude</th>
+            <th >Depth</th>
+            <th >Mag</th>
+            <th >Magtype</th>
+            <th >Place</th>
+            <th >LocationSource</th>
+        </tr>
+        {% for values in earthquakes7 %}
+        <tr >
+            {% for data in values %}
+            <td >{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Count of earthquakes with MAG between 4.0 and 5.0 is:</h3>
+    <h5>{{length7}}</h5>
+</div>
+<div>
+    <table >
+        <tr >
+            <th >Time</th>
+            <th >Latitude</th>
+            <th >Longitude</th>
+            <th >Depth</th>
+            <th >Mag</th>
+            <th >Magtype</th>
+            <th >Place</th>
+            <th >LocationSource</th>
+        </tr>
+        {% for values in earthquakes8 %}
+        <tr >
+            {% for data in values %}
+            <td >{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Count of earthquakes with MAG between 5.0 and 6.0 is:</h3>
+    <h5>{{length8}}</h5>
+</div>
+<div>
+    <table >
+        <tr >
+            <th >Time</th>
+            <th >Latitude</th>
+            <th >Longitude</th>
+            <th >Depth</th>
+            <th >Mag</th>
+            <th >Magtype</th>
+            <th >Place</th>
+            <th >LocationSource</th>
+        </tr>
+        {% for values in earthquakes9 %}
+        <tr >
+            {% for data in values %}
+            <td >{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Count of earthquakes with MAG between 6.0 and 7.0 is:</h3>
+    <h5>{{length9}}</h5>
+</div>
+<div>
+    <table >
+        <tr >
+            <th >Time</th>
+            <th >Latitude</th>
+            <th >Longitude</th>
+            <th >Depth</th>
+            <th >Mag</th>
+            <th >Magtype</th>
+            <th >Place</th>
+            <th >LocationSource</th>
+        </tr>
+        {% for values in earthquakes10 %}
+        <tr >
+            {% for data in values %}
+            <td >{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Count of earthquakes with MAG between 7.0 and 8.0 is:</h3>
+    <h5>{{length10}}</h5>
+</div>
+</body>
+</html>

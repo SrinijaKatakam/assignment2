@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 2</title>
+</head>
+<body>
+<div style="text-align: center">
+    <h1>Srinija Katakam</h1>
+    <h3>1001861512</h3>
+</div>
+<div>
+    <form action="{{url_for('eq_output')}}" enctype=multipart/form-data method="POST" style="width:30%;">
+        <fieldset>
+            <legend>Earthquake based on location</legend>
+            <label>Find earthquakes that were near (20 km, 50 km?) of a specified location.</label><br><br>
+            <label for="dist">Distance</label>
+            <input type="text" id="dist" name="dist"><br><br>
+            <label for="areas">Select the Area</label>
+            <select name="areas" id="areas">
+                {% for values in drop_down %}
+                <option value="{{values}}">{{values}}</option>
+                {% endfor %}
+            </select>
+            <a href="/eqoutput"><input type="submit" value="Find"></a>
+        </fieldset>
+    </form>
+</div>
+<div>
+    <table >
+        <tr >
+            <th >ID</th>
+            <th >Latitude</th>
+            <th >Longitude</th>
+            <th >Place</th>
+            <th >Area</th>
+        </tr>
+        {% for values in earthquakes %}
+        <tr >
+            {% for data in values %}
+            <td >{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Count of earthquakes is:</h3>
+    <h5>{{length}}</h5>
+</div>
+</body>
+</html>

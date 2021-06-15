@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 2</title>
+</head>
+<body>
+<div style="text-align: center">
+    <h1>Srinija Katakam</h1>
+    <h3>1001861512</h3>
+</div>
+<div>
+    <table >
+        <tr >
+            <th >Time</th>
+            <th >Latitude</th>
+            <th >Longitude</th>
+            <th >Depth</th>
+            <th >Mag</th>
+            <th >Magtype</th>
+            <th >Place</th>
+            <th >LocationSource</th>
+        </tr>
+        {% for values in earthquakes %}
+        <tr >
+            {% for data in values %}
+            <td >{{data}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>>
+    <h3>Count of earthquakes is:</h3>
+    <h5>{{length}}</h5>
+</div>
+</body>
+</html>
